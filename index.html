@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title></title>
+  
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Uncomment whatever script needs to be tested --> 
+  <script type="text/javascript" src="js/scratch.js"></script>
+  <script type="text/javascript" src="js/bind-polyfils.js"></script>
+  <script type="text/javascript" src="js/function-currying.js"></script>
+  <script type="text/javascript" src="js/debounce.js"></script>
+  <script type="text/javascript" src="js/throttle.js"></script>
+</head>
+
+<body>
+    <h1>Check browser console</h1>
+
+    <hr>
+    <div class="custom-pad">
+      <div class="header">
+        Bind and polyfils
+      </div>
+      <button type="button" onclick="demoBind()" class="action">Bind</button>
+    </div>
+    <hr>
+    <div class="custom-pad">
+      <div class="header">
+        Function currying
+      </div>
+      <button type="button" onclick="demoCurry()" class="action">Curry</button>
+    </div>
+    <hr>
+    <div class="custom-pad">
+      <div class="header">
+        Debouncing (300ms)
+      </div>
+      <input type="text" onkeyup="demoDebounce()" class="action" placeholder="Debounce delay of 300ms">
+    </div>
+    <hr>
+    <div class="custom-pad">
+      <div class="header">
+        Throttling (300ms)
+      </div>
+      <input type="text" onkeyup="demoThrottle()" class="action" placeholder="Throttle delay of 300ms">
+    </div>
+    <hr>
+</body>
+</html>
